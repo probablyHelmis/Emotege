@@ -14,34 +14,40 @@
 </head>
 
 <body style="background-color:#1B161E">
-	<div id="container", width=400%, height=400%>
-	<script>
-	
+<div id="container", width=400%, height=400%>
+<script>
+
+//Set initial variables
 var size = 0.05;
-//set up the image array	
-var emoteImages = { 
-	//loop to create array
+	
+//import json files
+//using placeholder text here
+const emoteJSON = '{"emotes" : [' 
+		+ '{"id": "n1", "group":"g1", "link":""},'
+		+ '{"name": "n2", "group":"g2", "link":""} ]}';
+var emoteArray = JSON.Parse(emoteJSON);
+const edgeJSON = '{"edges" : [' 
+		+ '{"from": "n1", "to":"n2"}';
+var edgeArray = JSON.Parse(edgeData);
+	
+//set up the image array
+var emoteImages = {};
+
+for (var key in emoteArray) {
+    emoteImages[emoteArray.emotes[key].id] = new Image();
+    emoteImages[emoteArray.emotes[key].id].src = emoteArray.emotes[key].link;
 };
-//create images (press F)
 	
 //initiate anychart
 anychart.onDocumentLoad(function () {
 
-//import json files
-	//using placeholder text here
-	const emoteJSON = '{"emotes" : [' 
-			+ '{:id": "n1", "group":"g1"},'
-			+ '{"name": "n2", "group":"g2"} ]}';
-	var emoteArray = JSON.Parse(emoteJSON);
-	const edgeJSON = '{"edges" : [' 
-			+ '{"from": "n1", "to":"n2"}';
-	var edgeArray = JSON.Parse(edgeData);
+
 
 	// set the data
 	var data = {nodes: [
 			for (let i in emoteArray) {
 				let newNode = {
-					var newNode_ID = emoteArray.emotes[i].code;
+					var newNode_ID = emoteArray.emotes[i].id;
 					"id": newNode_ID,
 	 				"group": emoteArray.emotes[i].group,
  					width: emoteImages[newNode_ID].width * size,
