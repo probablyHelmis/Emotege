@@ -25,17 +25,17 @@ var size = 0.05;
 const emoteJSON = '{"emotes" : [' 
 		+ '{"id": "n1", "group":"g1", "link":""},'
 		+ '{"name": "n2", "group":"g2", "link":""} ]}';
-var emoteArray = JSON.Parse(emoteJSON);
+var emoteArray = JSON.parse(emoteJSON);
 const edgeJSON = '{"edges" : [' 
-		+ '{"from": "n1", "to":"n2"}';
-var edgeArray = JSON.Parse(edgeData);
+		+ '{"from": "n1", "to":"n2"} ]}';
+var edgeArray = JSON.parse(edgeJSON);
 	
 //set up the image array
 var emoteImages = {};
 
-for (var key in emoteArray) {
-    emoteImages[emoteArray.emotes[key].id] = new Image();
-    emoteImages[emoteArray.emotes[key].id].src = emoteArray.emotes[key].link;
+for (let i = 0; i < emoteArray.emotes.length; i++) {
+    emoteImages[emoteArray.emotes[i].id] = new Image();
+    emoteImages[emoteArray.emotes[i].id].src = emoteArray.emotes[i].link;
 };
 	
 //initiate anychart
@@ -44,29 +44,33 @@ anychart.onDocumentLoad(function () {
 
 
 	// set the data
-	var data = {nodes: [
-			for (let i in emoteArray) {
-				let newNode = {
-					var newNode_ID = emoteArray.emotes[i].id;
-					"id": newNode_ID,
-	 				"group": emoteArray.emotes[i].group,
- 					width: emoteImages[newNode_ID].width * size,
-					height: emoteImages[newNode_ID].height * size,
-					fill: emoteImages[newNode_ID], 
-					mode: "fit"}
-				}
-				nodes.push(newNode);
-			};
-		
-		],
-		edges: [
-			for (let j in edgeArray) {
-				let newEdge = {
-	 				"from": emoteData.emotes[j].from,
-					"from": emoteData.emotes[j].to}
-				}
-				nodes.push(newNode);
-		] 
+	var nodes = []
+	var edges = []
+
+	for (let i = 0; i < emoteArray.emotes.length; i++) { 
+		var newNode_ID = emoteArray.emotes[i].id;
+		let newNode = {					
+			id: newNode_ID,
+	 		group: emoteArray.emotes[i].group,
+ 			width: emoteImages[newNode_ID].width * size,
+			height: emoteImages[newNode_ID].height * size,
+			fill: emoteImages[newNode_ID], 
+			mode: "fit"};
+		nodes.push(newNode);
+		};
+	
+
+	for (let j = 0; j < edgeArray.edges.length; j++) {
+		let newEdge = {
+	 		from: edgeArray.edges[j].from,
+			to: edgeArray.edges[j].to
+		};
+		edges.push(newEdge);
+	}
+
+	var data = {
+		nodes: nodes,	
+		edges: edges
 	};
 	
 	
@@ -100,6 +104,7 @@ anychart.onDocumentLoad(function () {
 				
 			//Colours for diff groups
 				var blebs = chart.group("Blebs");
+				console.log(blebs)
 				blebs.hovered().stroke("#FF729F", 3);
 				
 				var OOOO = chart.group("OOOO");
