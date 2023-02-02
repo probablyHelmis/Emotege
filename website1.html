@@ -98,9 +98,10 @@ anychart.onDocumentLoad(function () {
 		// set the shape and fill of nodes
 			nodes.normal().shape("rectangle");
 			nodes.normal().fill("");
-				
+			nodes.normal().stroke(null);
+	
 		//Group Config
-			var groupFormatting = {};
+			var groupFormatting = [];
 			for (let k = 0; k < groupArray.groups.length; k++) {
 				//Get the group
 				var groupFormat = chart.group(groupArray.groups[k].id);
@@ -161,37 +162,32 @@ anychart.onDocumentLoad(function () {
 			zoomController.render();
 		
 		//adding a legend: https://docs.anychart.com/Common_Settings/Legend/Overview
-			//personal reference: https://docs.anychart.com/Common_Settings/Legend/Individual_Legend_Items
-			//once i figure out what legend items actually are it should be easier to debug. 
-			//This code is very broken in its current state I just needed to make a start so I could get the gears turning. 
-			//EDIT: This worked surprisingly well in testing w/ a placeholder OOOO
-	
-		
-			//var legend = anychart.standalones.legend();
+			//personal reference: https://docs.anychart.com/Common_Settings/Legend/Individual_Legend_Items		
+			var legend = anychart.standalones.legend();
 
 			// create an array for storing legend items
-				//var legendItems = [];
+				var legendItems = [];
 				
 				//placeholder which (almost) worked?!
 				//var legendItems = [{text: "blebs", iconType: "square", iconFill: {color: "#FF729F" }}, {text: "blebs", iconType: "square", iconFill: {color: "#FF729F" }}];
 
 			// push legend items to the array
-				//for (var l = 0; l < groupArray.groups.length; l++) {
-			  		//legendItems.push({
-						//text: groupArray.groups[l].id;,
-						//iconType: "square",
-    						//iconFill: {color: groupArray.groups[l].colour}
-					//});
-				//};
+				for (var l = 0; l < groupArray.groups.length; l++) {
+			  		legendItems.push({
+						text: groupArray.groups[l].id,
+						iconType: "square",
+    						iconFill: {color: groupArray.groups[l].colour}
+					});
+				};
 		
 			// add items to the legend
-				//legend.items(legendItems);
+				legend.items(legendItems);
 
 			// set the container for the legend - need to make a new div for it as "container" is where the graph goes
-				//legend.container("container");
+				legend.container("container");
 
 			// draw the legend
-				//legend.draw();
+				legend.draw();
 	
 	//Chart Generation
 		// set the container element 
@@ -202,11 +198,9 @@ anychart.onDocumentLoad(function () {
 	
 	
 	
-	}); </script>
-	
-	
-	</div>
+	});
+</script>
+</div>
 	hello world
-
 </body>
 </html>
