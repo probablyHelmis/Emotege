@@ -1,14 +1,15 @@
 <html>
 
 <head>
-  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
-  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-graph.min.js" type="text/javascript"></script>
-  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js"type="text/javascript"></script>
+	<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
+	<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-graph.min.js" type="text/javascript"></script>
+	<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js"type="text/javascript"></script>
   
-  <!-- Pasted from: https://docs.anychart.com/Quick_Start/Downloading_AnyChart
+  	<!-- Pasted from: https://docs.anychart.com/Quick_Start/Downloading_AnyChart
 	<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-exports.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.anychart.com/releases/8.11.0/css/anychart-ui.min.css" /> -->
 	
+	<!-- CSS supporting the zoom UI -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.anychart.com/releases/8.11.0/css/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4"/> 
 	<link rel="stylesheet" type="text/css" href="https://cdn.anychart.com/releases/8.11.0/fonts/css/anychart-font.min.css"/>
 </head>
@@ -17,8 +18,15 @@
 <div id="container", width=400%, height=400%>
 <script>
 
-//Set initial variables
-var size = 0.05;
+//Set Display Variables
+var node_size = 0.05;
+
+//Added so that we can update a JSON file for new groups (will be important when we have a legend)
+const groupJSON = '{"groups" : [' 
+		+ '{"id": "n1", "colour":"#######"},'
+		+ '{"id": "n2", "colour":"#######"} ]}';
+var groupArray = JSON.parse(groupJSON);	
+	
 	
 //import json files
 //using placeholder text here
@@ -52,8 +60,8 @@ anychart.onDocumentLoad(function () {
 		let newNode = {					
 			id: newNode_ID,
 	 		group: emoteArray.emotes[i].group,
- 			width: emoteImages[newNode_ID].width * size,
-			height: emoteImages[newNode_ID].height * size,
+ 			width: emoteImages[newNode_ID].width * node_size,
+			height: emoteImages[newNode_ID].height * node_size,
 			fill: emoteImages[newNode_ID], 
 			mode: "fit"};
 		nodes.push(newNode);
@@ -78,54 +86,55 @@ anychart.onDocumentLoad(function () {
 	var chart = anychart.graph(data);
 	chart.background().fill("#1B161E");
 		
+	//Nodes Config
+		// access nodes
+			var nodes = chart.nodes();
 		
-		
-		//Nodes Config
-			// access nodes
-				var nodes = chart.nodes();
-			
-			// set the size of nodes
-				//nodes.normal().height(120);
-				//nodes.hovered().height(160);
-				//nodes.selected().height(213);
+		// set the size of nodes
+			//nodes.normal().height(120);
+			//nodes.hovered().height(160);
+			//nodes.selected().height(213);
 
-			// set the shape and fill of nodes
-				nodes.normal().shape("rectangle");
-				nodes.normal().fill("");
+		// set the shape and fill of nodes
+			nodes.normal().shape("rectangle");
+			nodes.normal().fill("");
 				
-				//won't work but:
-				//nodes.normal().width(Image(src: getData("{%image}").width);
-				//nodes.normal().height(Image(src: getData("{%image}").height);
-				
-			// set the stroke of nodes
-				nodes.normal().stroke(null);
-				nodes.hovered().stroke(null);
-				nodes.selected().stroke("#333333", 3);
+		//Group Config
+			var groupFormatting = {};
+			for (let k = 0; k < groupArray.groups.length; k++) {
+				//Get the group
+				var groupFormat = chart.group(groupArray.groups[k].id);
+				//Store it
+				groupFormatting.push(groupFormat);
+				//Now that the variable won't be overwritten (as it's saved in an array), edit the formatting
+				groupFormatting[k].hovered().stroke(groupArray.groups[k].colour, 1);
+				groupFormatting[k].selected().stroke(groupArray.groups[k].colour, 1);
+			};
 				
 			//Colours for diff groups
-				var blebs = chart.group("Blebs");
-				console.log(blebs)
-				blebs.hovered().stroke("#FF729F", 3);
+				//var blebs = chart.group("Blebs");
+				//console.log(blebs)
+				//blebs.hovered().stroke("#FF729F", 1);
 				
-				var OOOO = chart.group("OOOO");
-				OOOO.hovered().stroke("#E94F37", 3);
+				//var OOOO = chart.group("OOOO");
+				//OOOO.hovered().stroke("#E94F37", 1);
 				
-				var Boggies = chart.group("Boggies");
-				Boggies.hovered().stroke("#607B7D", 3);
+				//var Boggies = chart.group("Boggies");
+				//Boggies.hovered().stroke("#607B7D", 1);
 				
-				var hryQt = chart.group("hryQt");
-				hryQt.hovered().stroke("#F0C808", 3);
+				//var hryQt = chart.group("hryQt");
+				//hryQt.hovered().stroke("#F0C808", 1);
 				
-						//chart.group("Chatting").hovered().stroke("#3F88C5", 3);
-						//chart.group("Dungeon Hunters").hovered().stroke("#CBEF43", 3);
-						//chart.group("Peepos").hovered().stroke("#2E933C", 3);
-						//chart.group("Vanilla Minecraft").hovered().stroke("#8D6346", 3);
+				//chart.group("Chatting").hovered().stroke("#3F88C5", 3);
+				//chart.group("Dungeon Hunters").hovered().stroke("#CBEF43", 3);
+				//chart.group("Peepos").hovered().stroke("#2E933C", 3);
+				//chart.group("Vanilla Minecraft").hovered().stroke("#8D6346", 3);
 		
-		//Edges + Positioning
-			// configure the visual settings of edges
-				chart.edges().normal().stroke("#EEF0F2", 1);
-				chart.edges().hovered().stroke("#EEF0F2", 4, "arrow");
-				chart.edges().selected().stroke("#EEF0F2", 4);
+	//Graph-Arrangement Config
+		// configure the visual settings of edges
+			chart.edges().normal().stroke("#EEF0F2", 1);
+			chart.edges().hovered().stroke("#EEF0F2", 4, "arrow");
+			chart.edges().selected().stroke("#EEF0F2", 4);
 	
 		//How Labels Appear
 			// enable labels of nodes
@@ -137,25 +146,59 @@ anychart.onDocumentLoad(function () {
 				chart.nodes().labels().fontWeight(600);
 	
 	
-	// set the iteration count (how the chart organises - default is 500)
-		chart.layout().iterationCount(0);
-	//magnetisation? MMMM "alignment of nodes"
-		chart.interactivity().magnetize(false);
+		// iteration count (how the chart organises) -> default is 500
+				chart.layout().iterationCount(500);
+		//N/A magnetisation? "alignment of nodes" 
+			//chart.interactivity().magnetize(false);
 	
-	// add a zoom control panel
-    var zoomController = anychart.ui.zoom();
-    zoomController.target(chart);
-    zoomController.render();
+	//UI Config
+		// set chart title
+			chart.title("Emotege");
+	
+		// add a zoom control panel
+			var zoomController = anychart.ui.zoom();
+			zoomController.target(chart);
+			zoomController.render();
 		
-	// set chart title
-	chart.title("Emotege");
-	//adding a legend: https://docs.anychart.com/Common_Settings/Legend/Overview
-	//importing from a google sheet OOOO: https://docs.anychart.com/Working_with_Data/Data_Adapter/Loading_Google_Spreadsheet 
-	// set the container element 
-	chart.container("container");
+		//adding a legend: https://docs.anychart.com/Common_Settings/Legend/Overview
+			//personal reference: https://docs.anychart.com/Common_Settings/Legend/Individual_Legend_Items
+			//once i figure out what legend items actually are it should be easier to debug. 
+			//This code is very broken in its current state I just needed to make a start so I could get the gears turning. 
+			//EDIT: This worked surprisingly well in testing w/ a placeholder OOOO
+	
 		
-	// initiate chart (graph) drawing
-	chart.draw();
+			//var legend = anychart.standalones.legend();
+
+			// create an array for storing legend items
+				//var legendItems = [];
+				
+				//placeholder which (almost) worked?!
+				//var legendItems = [{text: "blebs", iconType: "square", iconFill: {color: "#FF729F" }}, {text: "blebs", iconType: "square", iconFill: {color: "#FF729F" }}];
+
+			// push legend items to the array
+				//for (var l = 0; l < groupArray.groups.length; l++) {
+			  		//legendItems.push({
+						//text: groupArray.groups[l].id;,
+						//iconType: "square",
+    						//iconFill: {color: groupArray.groups[l].colour}
+					//});
+				//};
+		
+			// add items to the legend
+				//legend.items(legendItems);
+
+			// set the container for the legend - need to make a new div for it as "container" is where the graph goes
+				//legend.container("container");
+
+			// draw the legend
+				//legend.draw();
+	
+	//Chart Generation
+		// set the container element 
+			chart.container("container");
+		
+		// initiate chart (graph) drawing
+			chart.draw();
 	
 	
 	
