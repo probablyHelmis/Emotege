@@ -111,26 +111,7 @@ anychart.onDocumentLoad(function () {
 				groupFormatting[k].hovered().stroke(groupArray.groups[k].colour, 1);
 				groupFormatting[k].selected().stroke(groupArray.groups[k].colour, 1);
 			};
-				
-			//Colours for diff groups
-				//var blebs = chart.group("Blebs");
-				//console.log(blebs)
-				//blebs.hovered().stroke("#FF729F", 1);
-				
-				//var OOOO = chart.group("OOOO");
-				//OOOO.hovered().stroke("#E94F37", 1);
-				
-				//var Boggies = chart.group("Boggies");
-				//Boggies.hovered().stroke("#607B7D", 1);
-				
-				//var hryQt = chart.group("hryQt");
-				//hryQt.hovered().stroke("#F0C808", 1);
-				
-				//chart.group("Chatting").hovered().stroke("#3F88C5", 3);
-				//chart.group("Dungeon Hunters").hovered().stroke("#CBEF43", 3);
-				//chart.group("Peepos").hovered().stroke("#2E933C", 3);
-				//chart.group("Vanilla Minecraft").hovered().stroke("#8D6346", 3);
-		
+
 	//Graph-Arrangement Config
 		// configure the visual settings of edges
 			chart.edges().normal().stroke("#EEF0F2", 1);
@@ -161,15 +142,11 @@ anychart.onDocumentLoad(function () {
 			zoomController.target(chart);
 			zoomController.render();
 		
-		//adding a legend: https://docs.anychart.com/Common_Settings/Legend/Overview
-			//personal reference: https://docs.anychart.com/Common_Settings/Legend/Individual_Legend_Items		
+		//adding a legend: https://docs.anychart.com/Common_Settings/Legend/Overview //personal reference: https://docs.anychart.com/Common_Settings/Legend/Individual_Legend_Items		
 			var legend = anychart.standalones.legend();
 
 			// create an array for storing legend items
 				var legendItems = [];
-				
-				//placeholder which (almost) worked?!
-				//var legendItems = [{text: "blebs", iconType: "square", iconFill: {color: "#FF729F" }}, {text: "blebs", iconType: "square", iconFill: {color: "#FF729F" }}];
 
 			// push legend items to the array
 				for (var l = 0; l < groupArray.groups.length; l++) {
@@ -182,6 +159,16 @@ anychart.onDocumentLoad(function () {
 		
 			// add items to the legend
 				legend.items(legendItems);
+			
+			//whole group highlights on mouseover, highlight dissapears on mouseout
+			legend.listen("legendItemMouseOver", function(e) {
+				//grabs a chart.group from groupFormatting, gives it a stroke in its "normal" state; fetching colour from groupArray
+				groupFormatting[e.itemIndex].normal().stroke(groupArray.groups[e.itemIndex].colour, 1);
+			});
+			
+			legend.listen("legendItemMouseOut", function(e) {
+				groupFormatting[e.itemIndex].normal().stroke(null);
+			});
 
 			// set the container for the legend - need to make a new div for it as "container" is where the graph goes
 				legend.container("container");
