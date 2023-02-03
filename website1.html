@@ -181,6 +181,11 @@ anychart.onDocumentLoad(function () {
 
 			// legend goes into "stage" - important that it happens *after* chart is drawn (for some reason)
 				legend.container(stage);
+			
+			// misc. legend arranging
+				legend.itemsLayout("vertical");
+				legend.drag(true);
+				legend.position("right");
 
 			// draw the legend
 				legend.draw();
