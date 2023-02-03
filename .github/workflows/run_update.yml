@@ -32,6 +32,7 @@ jobs:
       run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
     - uses: peter-evans/create-pull-request@v5-rc
       with:
+        token: ${{ secrets.PAT }}
         add-paths: |
           server/dailyrun.log
           server/hryGlyphics.json
