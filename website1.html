@@ -69,7 +69,7 @@ anychart.onDocumentLoad(function () {
  			width: emoteImages[newNode_ID].width * node_size,
 			height: emoteImages[newNode_ID].height * node_size,
 			fill: emoteImages[newNode_ID], 
-			"label": newNode_ID.replace(/(.{15})/g, "$1<br>"),
+			//"label": newNode_ID.replace(/(.{15})/g, "$1<br>"),
 			mode: "fit"};
 		nodes.push(newNode);
 	};
@@ -127,9 +127,11 @@ anychart.onDocumentLoad(function () {
 			// configure labels of nodes
 				chart.nodes().labels().fontSize(12*node_size);
 				chart.nodes().labels().fontWeight(600);
-				chart.nodes().labels().hAlign("center");
-				chart.nodes().labels().useHtml(true);
-				chart.nodes().labels().format("{%label}");
+				chart.nodes().labels().fontColor("#EEF0F2");
+				//chart.nodes().labels().hAlign("center");
+				//chart.nodes().labels().useHtml(true);
+				//chart.nodes().labels().position("relative");
+				//chart.nodes().labels().format("{%label}");
 	
 	
 		// iteration count (how the chart organises) -> default is 500.
@@ -139,6 +141,7 @@ anychart.onDocumentLoad(function () {
 	// UI Config
 		// set chart title
 			chart.title("Emotege");
+			chart.title().fontColor("#EEF0F2");
 	
 		// add a zoom control panel :hryFlex:
 			var zoomController = anychart.ui.zoom();
