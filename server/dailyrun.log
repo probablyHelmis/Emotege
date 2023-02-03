@@ -1,0 +1,4 @@
+INFO - ------ Starting Emote parsing ------
+WARNING - Missing value in object: {'id': 'hryQtSpider', 'group': None, 'link': 'https://cdn.7tv.app/emote/63388a6263c921dabe5399ad/4x.webp'}
+INFO - ------ Starting Edge parsing -------
+WARNING - Missing value in object: {'from': None, 'to': 'NERFDETECTED'}
