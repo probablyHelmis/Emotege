@@ -69,6 +69,7 @@ anychart.onDocumentLoad(function () {
  			width: emoteImages[newNode_ID].width * node_size,
 			height: emoteImages[newNode_ID].height * node_size,
 			fill: emoteImages[newNode_ID], 
+			"label": newNode_ID.replace(/(.{15})/g, "$1<br>"),
 			mode: "fit"};
 		nodes.push(newNode);
 	};
@@ -124,9 +125,11 @@ anychart.onDocumentLoad(function () {
 				chart.nodes().labels().enabled(true);
 
 			// configure labels of nodes
-				chart.nodes().labels().format("{%id}");
-				chart.nodes().labels().fontSize(2);
+				chart.nodes().labels().fontSize(12*node_size);
 				chart.nodes().labels().fontWeight(600);
+				chart.nodes().labels().hAlign("center");
+				chart.nodes().labels().useHtml(true);
+				chart.nodes().labels().format("{%label}");
 	
 	
 		// iteration count (how the chart organises) -> default is 500.
