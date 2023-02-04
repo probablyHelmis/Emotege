@@ -115,6 +115,8 @@ anychart.onDocumentLoad(function () {
 				var groupFormat = chart.group(groupArray.groups[k].id);
 				// Store it
 				groupFormatting.push(groupFormat);
+			};
+			for (let k = 0; k < groupArray.groups.length; k++) {
 				// Now that the variable won't be overwritten (as it's saved in an array), edit the formatting
 				groupFormatting[k].hovered().stroke(groupArray.groups[k].colour, 1);
 				groupFormatting[k].selected().stroke(groupArray.groups[k].colour, 1);
