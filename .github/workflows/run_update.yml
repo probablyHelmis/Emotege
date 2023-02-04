@@ -35,8 +35,8 @@ jobs:
         token: ${{ secrets.PAT }}
         add-paths: |
           server/dailyrun.log
-          server/hryGlyphics.json
-          server/rosetta.json
+          server/hryGlyphics.js
+          server/rosetta.js
         branch: sheet-data-${{ steps.date.outputs.date }}
         base: main
         title: Sheet data ${{ steps.date.outputs.date }}

@@ -70,12 +70,15 @@ def get_data():
     emote_array = get_emotes(row_data, column_numbers)
     connection_array = get_connections(row_data, column_numbers)
 
-    with open("hryGlyphics.json", 'w') as f:
-        json.dump(emote_array, f, indent=4)
+    emote_string = "emoteArray = " + json.dumps(emote_array, indent=4)
+    connection_string = "edgeArray = " + json.dumps(connection_array, indent=4)
+
+    with open("hryGlyphics.js", 'w') as f:
+        f.write(emote_string)
     f.close()
 
-    with open("rosetta.json", 'w') as f:
-        json.dump(connection_array, f, indent=4)
+    with open("rosetta.js", 'w') as f:
+        f.write(connection_string)
     f.close()
 
 
