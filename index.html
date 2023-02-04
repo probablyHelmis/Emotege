@@ -2,30 +2,21 @@
 
 
   <head>
-    <!--<script type="text/javascript" src="server/hryGlyphics.json"></script>
-    <script type="text/javascript" src="server/rosetta.json"></script>
-
-    <script type="module" src="server/hryGlyphics.json"></script>
-    <script type="module" src="server/rosetta.json"></script>
-    <script type="module" src="server/groups.js"></script> -->
-    
-    <script type="text/javascript" src="server/groups.json"></script>
+    <script type="text/javascript" src="server/hryGlyphics.js"></script>
+    <script type="text/javascript" src="server/rosetta.js"></script>
+    <script type="text/javascript" src="server/groups.js"></script>
 
     
   </head>
   
   <body>
     <script>
-      //import hryGlyphics from 'server/hryGlyphics.json' assert { type: 'JSON' };
-      //import rosetta from 'server/rosetta.json' assert { type: 'JSON' };
-      //import groups from 'server/groups.json' assert { type: 'JSON' };
-
-      //var emoteArray = JSON.parse(hryGlyphics);
-      //var edgeArray = JSON.parse(rosetta);
+      var emoteArray = JSON.parse(hryGlyphics);
+      var edgeArray = JSON.parse(rosetta);
       var groupArray = JSON.parse(groups);	
       
-      //console.log(emoteArray);
-      //console.log(edgeArray);
+      console.log(emoteArray);
+      console.log(edgeArray);
       console.log(groupArray);
       
     </script>
