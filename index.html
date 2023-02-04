@@ -5,17 +5,17 @@
     <!--<script type="text/javascript" src="server/hryGlyphics.json"></script>
     <script type="text/javascript" src="server/rosetta.json"></script> 
     <script type="text/javascript" src="server/groups.json"></script> -->
-    <script type="module" src="server/hryGlyphics.js"></script>
-    <script type="module" src="server/rosetta.js"></script>
-    <script type="module" src="server/groups.js"></script>
+    <script type="module" src="server/hryGlyphics.json"></script>
+    <script type="module" src="server/rosetta.json"></script>
+    <script type="module" src="server/groups.json"></script>
     
   </head>
   
   <body>
     <script>
-      import hryGlyphics from './hryGlyphics.json' assert { type: 'JSON' };
-      import rosetta from './rosetta.json' assert { type: 'JSON' };
-      import groups from './groups.json' assert { type: 'JSON' };
+      import hryGlyphics from 'server/hryGlyphics.json' assert { type: 'JSON' };
+      import rosetta from 'server/rosetta.json' assert { type: 'JSON' };
+      import groups from 'server/groups.json' assert { type: 'JSON' };
 
       var emoteArray = JSON.parse(hryGlyphics);
       var edgeArray = JSON.parse(rosetta);
