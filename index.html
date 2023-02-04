@@ -5,9 +5,9 @@
 	<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-graph.min.js" type="text/javascript"></script>
 	<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js"type="text/javascript"></script>
 	
-	//<script type="text/javascript" src="server/hryGlyphics.json"></script>
-	//<script type="text/javascript" src="server/rosetta.json"></script>
-	//<script type="text/javascript" src="server/groups.json"></script>
+	<script type="text/javascript" src="server/hryGlyphics.js"></script>
+    	<script type="text/javascript" src="server/rosetta.js"></script>
+   	<script type="text/javascript" src="server/groups.js"></script>
 
 
 	
@@ -28,27 +28,27 @@
 // import json files
 	// emoteJSON: Stores how nodes are connected. Fields: "id", "group", "link".
 	// Used for creating imageArray, and data[].nodes
-	const emoteJSON = '{"emotes" : [' 
-			+ '{"id": "hryLaf", "group":"hrySir", "link":"https://static-cdn.jtvnw.net/emoticons/v2/305325152/static/light/3.0"},'
-			+ '{"id": "hryLafExceptInPain", "group":"hrySir", "link":"https://static-cdn.jtvnw.net/emoticons/v2/306884218/static/light/3.0"},'
-			+ '{"id": "Luting", "group":"VIBE", "link":"https://cdn.betterttv.net/emote/616d3960054a252a431f9284/3x.webp"},'
-			+ '{"id": "Luteboy", "group":"VIBE", "link":"https://cdn.frankerfacez.com/emoticon/585502/4"} ]}';
-	var emoteArray = JSON.parse(emoteJSON);
+	//const emoteJSON = '{"emotes" : [' 
+	//		+ '{"id": "hryLaf", "group":"hrySir", "link":"https://static-cdn.jtvnw.net/emoticons/v2/305325152/static/light/3.0"},'
+	//		+ '{"id": "hryLafExceptInPain", "group":"hrySir", "link":"https://static-cdn.jtvnw.net/emoticons/v2/306884218/static/light/3.0"},'
+	//		+ '{"id": "Luting", "group":"VIBE", "link":"https://cdn.betterttv.net/emote/616d3960054a252a431f9284/3x.webp"},'
+	//		+ '{"id": "Luteboy", "group":"VIBE", "link":"https://cdn.frankerfacez.com/emoticon/585502/4"} ]}';
+	//var emoteArray = JSON.parse(emoteJSON);
 
 	// edgeJSON: Stores how nodes are connected. Fields: "from", "to".
 	// Used for creating edges in data[].edges
-	const edgeJSON = '{"edges" : [' 
-			+ '{"from": "hryLaf", "to":"hryLafExceptInPain"},'
-			+ '{"from": "hryLafExceptInPain", "to":"Luteboy"},'
-			+ '{"from": "Luting", "to":"Luteboy"} ]}';
-	var edgeArray = JSON.parse(edgeJSON);
+	//const edgeJSON = '{"edges" : [' 
+	//		+ '{"from": "hryLaf", "to":"hryLafExceptInPain"},'
+	//		+ '{"from": "hryLafExceptInPain", "to":"Luteboy"},'
+	//		+ '{"from": "Luting", "to":"Luteboy"} ]}';
+	//var edgeArray = JSON.parse(edgeJSON);
 
 	// g roupJSON: Stores group id and colour. Fields: "id", "colour".
 	// Used for defining group.hover(), group.selected() and legend items
-	const groupJSON = '{"groups" : [' 
-		+ '{"id": "hrySir", "colour":"#2E933C"},'
-		+ '{"id": "VIBE", "colour":"#F78154"} ]}';
-	var groupArray = JSON.parse(groupJSON);	
+	//const groupJSON = '{"groups" : [' 
+	//	+ '{"id": "hrySir", "colour":"#2E933C"},'
+	//	+ '{"id": "VIBE", "colour":"#F78154"} ]}';
+	//var groupArray = JSON.parse(groupJSON);	
 	
 
 // Create emoteImages array
