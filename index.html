@@ -109,18 +109,18 @@ anychart.onDocumentLoad(function () {
 			nodes.normal().stroke(null);
 	
 		// Group Formatting Config
-			var groupFormatting = [];
-			for (let k = 0; k < groupArray.groups.length; k++) {
+			//var groupFormatting = [];
+			//for (let k = 0; k < groupArray.groups.length; k++) {
 				// Get the group
-				var groupFormat = chart.group(groupArray.groups[k].id);
+			//	var groupFormat = chart.group(groupArray.groups[k].id);
 				// Store it
-				groupFormatting.push(groupFormat);
-			};
-			for (let k = 0; k < groupArray.groups.length; k++) {
+			//	groupFormatting.push(groupFormat);
+			//};
+			//for (let k = 0; k < groupArray.groups.length; k++) {
 				// Now that the variable won't be overwritten (as it's saved in an array), edit the formatting
-				groupFormatting[k].hovered().stroke(groupArray.groups[k].colour, 1);
-				groupFormatting[k].selected().stroke(groupArray.groups[k].colour, 1);
-			};
+			//	groupFormatting[k].hovered().stroke(groupArray.groups[k].colour, 1);
+			//	groupFormatting[k].selected().stroke(groupArray.groups[k].colour, 1);
+			//};
 
 	// Graph-Arrangement Config
 		// configure the visual settings of edges
