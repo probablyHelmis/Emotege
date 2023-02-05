@@ -1812,7 +1812,7 @@ emoteArray = {
         },
         {
             "id": "hryClown",
-            "group": "Honk Honk",
+            "group": "HonkHonk",
             "link": "https://static-cdn.jtvnw.net/emoticons/v2/304777830/static/light/3.0"
         },
         {
