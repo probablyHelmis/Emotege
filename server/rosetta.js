@@ -1,6 +1,10 @@
 edgeArray = {
     "edges": [
         {
+            "from": "4Shrug",
+            "to": "FacePalm"
+        },
+        {
             "from": "ABE",
             "to": "create"
         },
@@ -107,6 +111,10 @@ edgeArray = {
         {
             "from": "British",
             "to": "barryjohnson"
+        },
+        {
+            "from": "ByeChat",
+            "to": "GIGALOOT"
         },
         {
             "from": "CAKERUN",
@@ -326,6 +334,10 @@ edgeArray = {
         },
         {
             "from": "FeelsFaaafvMan",
+            "to": "FeelsBirthdayEmpi"
+        },
+        {
+            "from": "FeelsFaaafvMan",
             "to": "PETTHEFAAAFV"
         },
         {
@@ -339,6 +351,10 @@ edgeArray = {
         {
             "from": "FeelsOppyMan",
             "to": "HyperOppy"
+        },
+        {
+            "from": "Fine",
+            "to": "unsee"
         },
         {
             "from": "Fine",
@@ -499,6 +515,10 @@ edgeArray = {
         {
             "from": "LFG",
             "to": "LETSGO"
+        },
+        {
+            "from": "LOADING",
+            "to": "ranked"
         },
         {
             "from": "LOADING",
@@ -934,6 +954,10 @@ edgeArray = {
         },
         {
             "from": "STEALTH",
+            "to": "pepegaFlying"
+        },
+        {
+            "from": "STEALTH",
             "to": "SPOTTED"
         },
         {
@@ -1107,6 +1131,10 @@ edgeArray = {
         {
             "from": "UHHM",
             "to": "UHMCouncil"
+        },
+        {
+            "from": "UHM",
+            "to": "FacePalm"
         },
         {
             "from": "UHM",
@@ -1409,12 +1437,20 @@ edgeArray = {
             "to": "pearlCheck"
         },
         {
+            "from": "blebArrive",
+            "to": "yayVaultHunters"
+        },
+        {
             "from": "blebBoetry",
             "to": "blebLove"
         },
         {
             "from": "blebBoetry",
             "to": "blebBuilding"
+        },
+        {
+            "from": "blebJuice",
+            "to": "dsSanity"
         },
         {
             "from": "blebTap",
@@ -2101,6 +2137,12 @@ edgeArray = {
             "to": "hryF"
         },
         {
+
+            "from": "hryWtf",
+            "to": "AyyLmao"
+        },
+        {
+
             "from": "hryYeff",
             "to": "CROCC"
         },
@@ -2123,6 +2165,10 @@ edgeArray = {
         {
             "from": "iSrAfAiL",
             "to": "theDiggyHoleManMimesDiggingAHole"
+        },
+        {
+            "from": "imout",
+            "to": "ByeChat"
         },
         {
             "from": "insertbogEatHere",
@@ -2195,6 +2241,14 @@ edgeArray = {
         {
             "from": "pearlCheck",
             "to": "rodCheck"
+        },
+        {
+            "from": "peepo",
+            "to": "ppL"
+        },
+        {
+            "from": "peepo",
+            "to": "pepePoopSplash"
         },
         {
             "from": "peepo",
@@ -2281,6 +2335,14 @@ edgeArray = {
             "to": "MrIskallShouldLeaveTheVaultButDieBecauseOfABitOfGreeding"
         },
         {
+            "from": "ppL",
+            "to": "ppPartyPeePeeBreak"
+        },
+        {
+            "from": "ppL",
+            "to": "ppLag"
+        },
+        {
             "from": "rodCheck",
             "to": "pearlCheck"
         },
@@ -2303,6 +2365,14 @@ edgeArray = {
         {
             "from": "stealer",
             "to": "stealing"
+        },
+        {
+            "from": "stream",
+            "to": "yayVaultHunters"
+        },
+        {
+            "from": "stream",
+            "to": "blebJuice"
         },
         {
             "from": "sword_LC",

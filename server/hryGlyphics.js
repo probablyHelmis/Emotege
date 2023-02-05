@@ -2431,6 +2431,11 @@ emoteArray = {
             "link": "https://cdn.7tv.app/emote/636fd8f96a695026444f8a46/4x.webp"
         },
         {
+            "id": "ppL",
+            "group": "Peepo",
+            "link": "https://cdn.7tv.app/emote/60a3ed99b0dc46d7b438b82a/4x.webp"
+        },
+        {
             "id": "ppLag",
             "group": "Bixels",
             "link": "https://cdn.7tv.app/emote/6122b9e06cb0b55c059f659b/4x.webp"
