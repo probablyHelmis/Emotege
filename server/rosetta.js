@@ -110,6 +110,10 @@ edgeArray = {
         },
         {
             "from": "COCKA",
+            "to": "ROCKA"
+        },
+        {
+            "from": "COCKA",
             "to": "SNIFFA"
         },
         {
@@ -257,6 +261,10 @@ edgeArray = {
             "to": "Believers"
         },
         {
+            "from": "DOUWSKY",
+            "to": "DOUWineTime"
+        },
+        {
             "from": "DRAGONPERCHRIGHTNOWMADGE",
             "to": "GOLIVERIGHTNOWMADGE"
         },
@@ -275,6 +283,10 @@ edgeArray = {
         {
             "from": "FAAAFVBEWASHINGBRAINS",
             "to": "pogOcleaningchat"
+        },
+        {
+            "from": "FeelsFaaafvMan",
+            "to": "FeelsLumMan"
         },
         {
             "from": "FeelsFaaafvMan",
@@ -373,6 +385,10 @@ edgeArray = {
             "to": "UHMCouncil"
         },
         {
+            "from": "HOLE",
+            "to": "pickaxe"
+        },
+        {
             "from": "HUH",
             "to": "silly"
         },
@@ -467,6 +483,10 @@ edgeArray = {
         {
             "from": "MH",
             "to": "UHMCouncil"
+        },
+        {
+            "from": "MILK",
+            "to": "MILKIES"
         },
         {
             "from": "MILK",
@@ -1022,6 +1042,10 @@ edgeArray = {
         },
         {
             "from": "VIBE",
+            "to": "SuSway"
+        },
+        {
+            "from": "VIBE",
             "to": "Conducting"
         },
         {
@@ -1043,6 +1067,18 @@ edgeArray = {
         {
             "from": "Vault",
             "to": "dunGe"
+        },
+        {
+            "from": "WALIA",
+            "to": "sweden"
+        },
+        {
+            "from": "WALIA",
+            "to": "PagMan"
+        },
+        {
+            "from": "WALIA",
+            "to": "PepeiskallDoingaGaslight"
         },
         {
             "from": "WALIA",
@@ -1374,6 +1410,10 @@ edgeArray = {
         },
         {
             "from": "frame",
+            "to": "trashcan"
+        },
+        {
+            "from": "frame",
             "to": "light"
         },
         {
@@ -1603,6 +1643,10 @@ edgeArray = {
         {
             "from": "hryClown",
             "to": "hryBoints"
+        },
+        {
+            "from": "hryCop",
+            "to": "wot"
         },
         {
             "from": "hryCop",
@@ -2021,6 +2065,10 @@ edgeArray = {
             "to": "peepoSteer"
         },
         {
+            "from": "pickaxe",
+            "to": "Chiseling"
+        },
+        {
             "from": "pickaxebreak",
             "to": "Narratorge"
         },
@@ -2094,11 +2142,39 @@ edgeArray = {
         },
         {
             "from": "what",
+            "to": "who"
+        },
+        {
+            "from": "what",
+            "to": "where"
+        },
+        {
+            "from": "what",
+            "to": "why"
+        },
+        {
+            "from": "what",
+            "to": "wot"
+        },
+        {
+            "from": "what",
             "to": "Chiseling"
         },
         {
             "from": "whenIPostLutingInTheChatIAmPretendingThatIAmTheOneDoingTheLutingAndNotThePersonActuallyLuting",
             "to": "PurposelyLongEmoteNameIntendedToTakeUpAllOfChatForMobileUsersPepeLaughOhNoNoNoMobileUsersHaveNo7tv"
+        },
+        {
+            "from": "where",
+            "to": "Chiseling"
+        },
+        {
+            "from": "who",
+            "to": "Chiseling"
+        },
+        {
+            "from": "why",
+            "to": "Chiseling"
         },
         {
             "from": "widepeepoHappy",
