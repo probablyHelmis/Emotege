@@ -298,6 +298,10 @@ edgeArray = {
         },
         {
             "from": "DRIPPY",
+            "to": "ByeChat"
+        },
+        {
+            "from": "DRIPPY",
             "to": "monkaGIGAftRobertDowneyJr"
         },
         {
@@ -2133,10 +2137,12 @@ edgeArray = {
             "to": "hryF"
         },
         {
+
             "from": "hryWtf",
             "to": "AyyLmao"
         },
         {
+
             "from": "hryYeff",
             "to": "CROCC"
         },
