@@ -306,6 +306,11 @@ emoteArray = {
             "link": "https://cdn.frankerfacez.com/emoticon/298847/4"
         },
         {
+            "id": "CleanStreams",
+            "group": "Sir",
+            "link": "https://cdn.7tv.app/emote/63ceb7e975acdcde61648dfb/4x.webp"
+        },
+        {
             "id": "Conducting",
             "group": "VIBE",
             "link": "https://cdn.betterttv.net/emote/621cffa506fd6a9f5be5d516/3x.webp"
@@ -411,6 +416,11 @@ emoteArray = {
             "link": "https://cdn.betterttv.net/emote/5eb1dc97cc14c126e083ecd4/3x.webp"
         },
         {
+            "id": "FLUTERS",
+            "group": "VIBE",
+            "link": "https://cdn.7tv.app/emote/621ce6ca0e9f003c8970caf8/4x.webp"
+        },
+        {
             "id": "FacePalm",
             "group": "hry",
             "link": "https://cdn.betterttv.net/emote/605da1da7493072efdeb4d07/3x.webp"
@@ -471,9 +481,19 @@ emoteArray = {
             "link": "https://cdn.frankerfacez.com/emoticon/471154/4"
         },
         {
+            "id": "FlyAfBird",
+            "group": "hry",
+            "link": "https://cdn.7tv.app/emote/63dac8b77f5b6f692c851246/4x.webp"
+        },
+        {
             "id": "Fridge",
             "group": "hry",
             "link": "https://cdn.7tv.app/emote/61fc0f1123f0a55b0ba8313d/4x.webp"
+        },
+        {
+            "id": "GAMBA",
+            "group": "hry",
+            "link": "https://cdn.7tv.app/emote/63dc2caaaa8f036a3bec1fef/4x.webp"
         },
         {
             "id": "GCyoink",
@@ -581,6 +601,11 @@ emoteArray = {
             "link": "https://cdn.betterttv.net/emote/576befd71f520d6039622f7e/3x.webp"
         },
         {
+            "id": "HANDD",
+            "group": "hry",
+            "link": "https://cdn.7tv.app/emote/63d78824b5d1d2e23e5d7108/4x.webp"
+        },
+        {
             "id": "HM",
             "group": "UHM",
             "link": "https://cdn.7tv.app/emote/63cd642d75acdcde616469cd/4x.webp"
@@ -639,6 +664,11 @@ emoteArray = {
             "id": "Jammies",
             "group": "VIBE",
             "link": "https://cdn.betterttv.net/emote/5f9f59896f583802e38a4fdf/3x.webp"
+        },
+        {
+            "id": "Jewelgi",
+            "group": "Cheer",
+            "link": "https://cdn.7tv.app/emote/63deba577c80a9c5f535cf82/4x.webp"
         },
         {
             "id": "JogChamp",
@@ -711,6 +741,11 @@ emoteArray = {
             "link": "https://cdn.7tv.app/emote/617cc795e0801fb987887100/4x.webp"
         },
         {
+            "id": "Ladge",
+            "group": "Ge",
+            "link": "https://cdn.7tv.app/emote/62dd2a8889879ef080b195af/4x.webp"
+        },
+        {
             "id": "Luteboy",
             "group": "VIBE",
             "link": "https://cdn.frankerfacez.com/emoticon/585502/4"
@@ -754,6 +789,11 @@ emoteArray = {
             "id": "MMMMAD",
             "group": "Sir",
             "link": "https://cdn.7tv.app/emote/623b0b10b8ebd44383da619e/4x.webp"
+        },
+        {
+            "id": "MOMENT",
+            "group": "UHM",
+            "link": "https://cdn.7tv.app/emote/63dc19407f5b6f692c8535fa/4x.webp"
         },
         {
             "id": "MRGLURP",
@@ -1071,6 +1111,11 @@ emoteArray = {
             "link": "https://cdn.betterttv.net/emote/613a65bd4b0ce91830357e9b/3x.webp"
         },
         {
+            "id": "SNIFFER",
+            "group": "KLIM",
+            "link": "https://cdn.7tv.app/emote/63d4c1d2b66927fc2e11ac32/4x.webp"
+        },
+        {
             "id": "SPEEDRUNDETECTED",
             "group": "Running",
             "link": "https://cdn.7tv.app/emote/62ae0fef604faf86342236c8/4x.webp"
@@ -1229,6 +1274,11 @@ emoteArray = {
             "id": "Tasty",
             "group": "VIBE",
             "link": "https://cdn.7tv.app/emote/60aec1d15174a619db0f01c8/4x.webp"
+        },
+        {
+            "id": "ToTheWiki",
+            "group": "Minecraft",
+            "link": "https://cdn.7tv.app/emote/63dd72627c80a9c5f535ad96/4x.webp"
         },
         {
             "id": "Toes",
@@ -1506,6 +1556,11 @@ emoteArray = {
             "link": "https://cdn.betterttv.net/emote/5f5835626084af6c1719db4f/3x.webp"
         },
         {
+            "id": "blebdance",
+            "group": "Blebs",
+            "link": "https://cdn.7tv.app/emote/63dc2d57ae68e92724d7ddab/4x.webp"
+        },
+        {
             "id": "boatCheck",
             "group": "Running",
             "link": "https://cdn.7tv.app/emote/62b71ebc20f29b83b4e3a3c1/4x.webp"
@@ -1586,6 +1641,11 @@ emoteArray = {
             "link": "https://cdn.7tv.app/emote/62b1b9f56422f4e240da9930/4x.webp"
         },
         {
+            "id": "breakfast",
+            "group": "UNLUCKY",
+            "link": "https://cdn.7tv.app/emote/62cc51bea7ffd3f6119ca3d9/4x.webp"
+        },
+        {
             "id": "bryAYAYA",
             "group": "HonkHonk",
             "link": "https://cdn.frankerfacez.com/emoticon/602104/4"
@@ -1616,6 +1676,11 @@ emoteArray = {
             "link": "https://cdn.7tv.app/emote/638a7b6c005eef2a1735eff6/4x.webp"
         },
         {
+            "id": "create",
+            "group": "Dungeon Hunters",
+            "link": "https://cdn.7tv.app/emote/63dd89c390e9cc0a848888f3/4x.webp"
+        },
+        {
             "id": "digSiteOOOO",
             "group": "Cheer",
             "link": "https://cdn.7tv.app/emote/635d5cc1bc61b5b07cd2a5ce/4x.webp"
@@ -1624,6 +1689,11 @@ emoteArray = {
             "id": "doorLove",
             "group": "Minecraft ",
             "link": "https://cdn.7tv.app/emote/60d8517b28fb0b0a54e3c504/4x.webp"
+        },
+        {
+            "id": "dsSanity",
+            "group": "hry",
+            "link": "https://cdn.7tv.app/emote/63dbe83854caa117064eee9d/4x.webp"
         },
         {
             "id": "dunGe",
@@ -1694,6 +1764,11 @@ emoteArray = {
             "id": "gunT",
             "group": "Sir",
             "link": "https://cdn.betterttv.net/emote/616f89e2054a252a431fd415/3x.webp"
+        },
+        {
+            "id": "haHaha",
+            "group": "UHM",
+            "link": "https://cdn.7tv.app/emote/63d7e84db98b49dd71f097bc/4x.webp"
         },
         {
             "id": "helmet",
@@ -1916,6 +1991,11 @@ emoteArray = {
             "link": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_7dadbd2c969149adb6a1ecd428dd8fc9/static/light/3.0"
         },
         {
+            "id": "hryLooter",
+            "group": "Sir",
+            "link": "https://cdn.7tv.app/emote/63de7b2c01d3b540833158c1/4x.webp"
+        },
+        {
             "id": "hryLove",
             "group": "Blebs",
             "link": "https://static-cdn.jtvnw.net/emoticons/v2/305324871/static/light/3.0"
@@ -2126,6 +2206,11 @@ emoteArray = {
             "link": "https://cdn.7tv.app/emote/63815a511b2c99744ac1f005/4x.webp"
         },
         {
+            "id": "isksad",
+            "group": "WALIA",
+            "link": "https://cdn.7tv.app/emote/63dd75a85d4acdefd4473021/4x.webp"
+        },
+        {
             "id": "jamGappa",
             "group": "hry",
             "link": "https://cdn.frankerfacez.com/emoticon/488529/4"
@@ -2221,6 +2306,11 @@ emoteArray = {
             "link": "https://cdn.7tv.app/emote/6268904f4f54759b7184fa72/4x.webp"
         },
         {
+            "id": "parkour",
+            "group": "UNLUCKY",
+            "link": "https://cdn.7tv.app/emote/63decc6c4af186f390db9b1f/4x.webp"
+        },
+        {
             "id": "pasta",
             "group": "hryGlyphics",
             "link": "https://cdn.7tv.app/emote/638fb21592b0cd5214ca1b65/4x.webp"
@@ -2274,6 +2364,16 @@ emoteArray = {
             "id": "peepoSteer",
             "group": "Peepo",
             "link": "https://cdn.betterttv.net/emote/60351faa7c74605395f32e4c/3x.webp"
+        },
+        {
+            "id": "pepePoopSplash",
+            "group": "Peepo",
+            "link": "https://cdn.7tv.app/emote/61ca0401ef5a587a0745bd07/4x.webp"
+        },
+        {
+            "id": "pepegaFlying",
+            "group": "Minecraft",
+            "link": "https://cdn.7tv.app/emote/624960d570bfdf27eb496485/4x.webp"
         },
         {
             "id": "pepeiskallDoingtheChattingbutActuallyControllingTheCraneOnTheOilrig",
@@ -2489,6 +2589,11 @@ emoteArray = {
             "id": "wot",
             "group": "hryGlyphics",
             "link": "https://cdn.7tv.app/emote/63d6aea08d2ddb55395c13d5/4x.webp"
+        },
+        {
+            "id": "yayVaultHunters",
+            "group": "Dungeon Hunters",
+            "link": "https://cdn.7tv.app/emote/63de94f890e9cc0a8488a356/4x.webp"
         },
         {
             "id": "youcanreallytastethecum",
