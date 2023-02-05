@@ -1,6 +1,10 @@
 edgeArray = {
     "edges": [
         {
+            "from": "4Shrug",
+            "to": "FacePalm"
+        },
+        {
             "from": "ABE",
             "to": "create"
         },
@@ -109,8 +113,16 @@ edgeArray = {
             "to": "barryjohnson"
         },
         {
+            "from": "ByeChat",
+            "to": "GIGALOOT"
+        },
+        {
             "from": "CAKERUN",
             "to": "barryCake"
+        },
+        {
+            "from": "CHEESE",
+            "to": "helmet"
         },
         {
             "from": "CHEESE",
@@ -266,6 +278,10 @@ edgeArray = {
         },
         {
             "from": "Copege",
+            "to": "magnet"
+        },
+        {
+            "from": "Copege",
             "to": "MrCope"
         },
         {
@@ -279,6 +295,18 @@ edgeArray = {
         {
             "from": "DRAGONPERCHRIGHTNOWMADGE",
             "to": "GOLIVERIGHTNOWMADGE"
+        },
+        {
+            "from": "DRIPPY",
+            "to": "monkaGIGAftRobertDowneyJr"
+        },
+        {
+            "from": "DRIPPY ",
+            "to": "GIGALOOT"
+        },
+        {
+            "from": "Dedge",
+            "to": "SKULL"
         },
         {
             "from": "Elden",
@@ -302,6 +330,10 @@ edgeArray = {
         },
         {
             "from": "FeelsFaaafvMan",
+            "to": "FeelsBirthdayEmpi"
+        },
+        {
+            "from": "FeelsFaaafvMan",
             "to": "PETTHEFAAAFV"
         },
         {
@@ -318,11 +350,19 @@ edgeArray = {
         },
         {
             "from": "Fine",
+            "to": "unsee"
+        },
+        {
+            "from": "Fine",
             "to": "Chiseling"
         },
         {
             "from": "FirstTry",
             "to": "NOTABLE"
+        },
+        {
+            "from": "GEARGI",
+            "to": "Gladiatorge"
         },
         {
             "from": "GEORGED",
@@ -339,6 +379,10 @@ edgeArray = {
         {
             "from": "GLARANCE",
             "to": "Elden"
+        },
+        {
+            "from": "GLOGGERS",
+            "to": "GLYPHERS"
         },
         {
             "from": "GLOGGERS",
@@ -457,6 +501,10 @@ edgeArray = {
             "to": "youcanreallytastethecum"
         },
         {
+            "from": "LBCplz",
+            "to": "barryjohnson"
+        },
+        {
             "from": "LFG",
             "to": "LFGLURP"
         },
@@ -466,7 +514,15 @@ edgeArray = {
         },
         {
             "from": "LOADING",
+            "to": "ranked"
+        },
+        {
+            "from": "LOADING",
             "to": "seedBitch"
+        },
+        {
+            "from": "LOLW",
+            "to": "DRIPPY"
         },
         {
             "from": "LOLW",
@@ -662,6 +718,10 @@ edgeArray = {
         },
         {
             "from": "NOTABLE",
+            "to": "SKILLISSUE"
+        },
+        {
+            "from": "NOTABLE",
             "to": "YouDied"
         },
         {
@@ -845,6 +905,22 @@ edgeArray = {
             "to": "EntireMorbiusMovie"
         },
         {
+            "from": "ROACH",
+            "to": "FlyAfBird"
+        },
+        {
+            "from": "ROACH",
+            "to": "WHAT"
+        },
+        {
+            "from": "ROACH",
+            "to": "HANDD"
+        },
+        {
+            "from": "SKILLISSUE",
+            "to": "Haxball"
+        },
+        {
             "from": "SNIFFA",
             "to": "heyiskallyousmellreallygoodtoday"
         },
@@ -871,6 +947,10 @@ edgeArray = {
         {
             "from": "SPEEDRUNDETECTED",
             "to": "JogChamp"
+        },
+        {
+            "from": "STEALTH",
+            "to": "pepegaFlying"
         },
         {
             "from": "STEALTH",
@@ -1050,6 +1130,10 @@ edgeArray = {
         },
         {
             "from": "UHM",
+            "to": "FacePalm"
+        },
+        {
+            "from": "UHM",
             "to": "HUH"
         },
         {
@@ -1079,6 +1163,10 @@ edgeArray = {
         {
             "from": "UMM",
             "to": "UHMCouncil"
+        },
+        {
+            "from": "UNLUCKY",
+            "to": "parkour"
         },
         {
             "from": "UNLUCKY",
@@ -1139,6 +1227,14 @@ edgeArray = {
         {
             "from": "WALIA",
             "to": "PepeiskallDoingaGaslight"
+        },
+        {
+            "from": "WALIA",
+            "to": "MUKI"
+        },
+        {
+            "from": "WALIA",
+            "to": "isksad"
         },
         {
             "from": "WALIA",
@@ -1209,8 +1305,16 @@ edgeArray = {
             "to": "haHaha"
         },
         {
+            "from": "WHAT",
+            "to": "ParasocialMoment"
+        },
+        {
             "from": "WHERETHEFUCKISTHISSPIDERMANITHASTOBEBELOWMEHEISRIGHTNEXTTOMEWHEREHELLOWHEREISTHIS",
             "to": "NEWUPDATEDTIMERTOSPEEDRUNTHEGAMEWITHBLOCKS"
+        },
+        {
+            "from": "WICKED",
+            "to": "Skateparkge"
         },
         {
             "from": "WICKED",
@@ -1329,12 +1433,20 @@ edgeArray = {
             "to": "pearlCheck"
         },
         {
+            "from": "blebArrive",
+            "to": "yayVaultHunters"
+        },
+        {
             "from": "blebBoetry",
             "to": "blebLove"
         },
         {
             "from": "blebBoetry",
             "to": "blebBuilding"
+        },
+        {
+            "from": "blebJuice",
+            "to": "dsSanity"
         },
         {
             "from": "blebTap",
@@ -1578,6 +1690,10 @@ edgeArray = {
         },
         {
             "from": "hryBillian",
+            "to": "hryLooter"
+        },
+        {
+            "from": "hryBillian",
             "to": "gaslight"
         },
         {
@@ -1769,6 +1885,10 @@ edgeArray = {
             "to": "jamGappa"
         },
         {
+            "from": "hryGoogle",
+            "to": "ToTheWiki"
+        },
+        {
             "from": "hryHP",
             "to": "hry1"
         },
@@ -1827,6 +1947,10 @@ edgeArray = {
         {
             "from": "hryM",
             "to": "hryPeepers"
+        },
+        {
+            "from": "hryMMMM",
+            "to": "Waiting"
         },
         {
             "from": "hryMMMM",
@@ -1982,6 +2106,10 @@ edgeArray = {
         },
         {
             "from": "hryUhm",
+            "to": "hryWtf"
+        },
+        {
+            "from": "hryUhm",
             "to": "UHM"
         },
         {
@@ -2005,6 +2133,14 @@ edgeArray = {
             "to": "hryF"
         },
         {
+            "from": "hryWtf",
+            "to": "AyyLmao"
+        },
+        {
+            "from": "hryYeff",
+            "to": "CROCC"
+        },
+        {
             "from": "hryYimmy",
             "to": "Backseating"
         },
@@ -2023,6 +2159,10 @@ edgeArray = {
         {
             "from": "iSrAfAiL",
             "to": "theDiggyHoleManMimesDiggingAHole"
+        },
+        {
+            "from": "imout",
+            "to": "ByeChat"
         },
         {
             "from": "insertbogEatHere",
@@ -2095,6 +2235,14 @@ edgeArray = {
         {
             "from": "pearlCheck",
             "to": "rodCheck"
+        },
+        {
+            "from": "peepo",
+            "to": "ppL"
+        },
+        {
+            "from": "peepo",
+            "to": "pepePoopSplash"
         },
         {
             "from": "peepo",
@@ -2181,6 +2329,14 @@ edgeArray = {
             "to": "MrIskallShouldLeaveTheVaultButDieBecauseOfABitOfGreeding"
         },
         {
+            "from": "ppL",
+            "to": "ppPartyPeePeeBreak"
+        },
+        {
+            "from": "ppL",
+            "to": "ppLag"
+        },
+        {
             "from": "rodCheck",
             "to": "pearlCheck"
         },
@@ -2203,6 +2359,14 @@ edgeArray = {
         {
             "from": "stealer",
             "to": "stealing"
+        },
+        {
+            "from": "stream",
+            "to": "yayVaultHunters"
+        },
+        {
+            "from": "stream",
+            "to": "blebJuice"
         },
         {
             "from": "sword_LC",
