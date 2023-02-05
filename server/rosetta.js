@@ -1,6 +1,10 @@
 edgeArray = {
     "edges": [
         {
+            "from": "ABE",
+            "to": "create"
+        },
+        {
             "from": "ABNNED",
             "to": "BANNED"
         },
@@ -27,6 +31,10 @@ edgeArray = {
         {
             "from": "BAITED",
             "to": "blebVish"
+        },
+        {
+            "from": "BIGPAIN",
+            "to": "PAINite"
         },
         {
             "from": "BIGPAIN",
@@ -71,6 +79,10 @@ edgeArray = {
         {
             "from": "Binoculous",
             "to": "Binopeulous"
+        },
+        {
+            "from": "BlebD",
+            "to": "blebdance"
         },
         {
             "from": "BlebD",
@@ -390,6 +402,10 @@ edgeArray = {
         },
         {
             "from": "HUH",
+            "to": "breakfast"
+        },
+        {
+            "from": "HUH",
             "to": "silly"
         },
         {
@@ -462,6 +478,10 @@ edgeArray = {
         },
         {
             "from": "Luting",
+            "to": "FLUTERS"
+        },
+        {
+            "from": "Luting",
             "to": "Luteboy"
         },
         {
@@ -491,6 +511,10 @@ edgeArray = {
         {
             "from": "MILK",
             "to": "KLIMER"
+        },
+        {
+            "from": "MINECRAFT",
+            "to": "ToTheWiki"
         },
         {
             "from": "MINECRAFT",
@@ -693,6 +717,10 @@ edgeArray = {
             "to": "HOLDBANG"
         },
         {
+            "from": "Oregi",
+            "to": "Jewelgi"
+        },
+        {
             "from": "PAIN",
             "to": "BIGPAIN"
         },
@@ -703,6 +731,10 @@ edgeArray = {
         {
             "from": "PAIN",
             "to": "CROCC"
+        },
+        {
+            "from": "PEPPER",
+            "to": "PAINite"
         },
         {
             "from": "PETTHEBLEB",
@@ -769,6 +801,14 @@ edgeArray = {
             "to": "SUBGAM"
         },
         {
+            "from": "PRETENDING",
+            "to": "hryFood"
+        },
+        {
+            "from": "ParasocialMoment",
+            "to": "MOMENT"
+        },
+        {
             "from": "PepeHands",
             "to": "BlebLikeThis"
         },
@@ -806,6 +846,10 @@ edgeArray = {
         },
         {
             "from": "SNIFFA",
+            "to": "heyiskallyousmellreallygoodtoday"
+        },
+        {
+            "from": "SNIFFA",
             "to": "SNIFFADETECTED"
         },
         {
@@ -815,6 +859,10 @@ edgeArray = {
         {
             "from": "SNIFFA",
             "to": "Toes"
+        },
+        {
+            "from": "SNIFFAflute",
+            "to": "FLUTERS"
         },
         {
             "from": "SPEEDRUNDETECTED",
@@ -835,6 +883,10 @@ edgeArray = {
         {
             "from": "SWORD",
             "to": "sword_LC"
+        },
+        {
+            "from": "Sadge",
+            "to": "Ladge"
         },
         {
             "from": "Sadge",
@@ -965,12 +1017,20 @@ edgeArray = {
             "to": "jamGappa"
         },
         {
+            "from": "TWO",
+            "to": "BurgerKingFootLettuce"
+        },
+        {
             "from": "Toes",
             "to": "Tssk"
         },
         {
             "from": "TryHard",
             "to": "Gamer"
+        },
+        {
+            "from": "Tssk",
+            "to": "CleanStreams"
         },
         {
             "from": "UH",
@@ -1145,6 +1205,10 @@ edgeArray = {
             "to": "WeirdgeCouncil"
         },
         {
+            "from": "WHAT",
+            "to": "haHaha"
+        },
+        {
             "from": "WHERETHEFUCKISTHISSPIDERMANITHASTOBEBELOWMEHEISRIGHTNEXTTOMEWHEREHELLOWHEREISTHIS",
             "to": "NEWUPDATEDTIMERTOSPEEDRUNTHEGAMEWITHBLOCKS"
         },
@@ -1235,6 +1299,10 @@ edgeArray = {
         {
             "from": "YuuBooty",
             "to": "MrBooty"
+        },
+        {
+            "from": "anvil",
+            "to": "balanceUpdate"
         },
         {
             "from": "anvil",
@@ -1394,6 +1462,10 @@ edgeArray = {
         },
         {
             "from": "doorLove",
+            "to": "ShiftSteve"
+        },
+        {
+            "from": "doorLove",
             "to": "NOPE"
         },
         {
@@ -1443,6 +1515,10 @@ edgeArray = {
         {
             "from": "gudge",
             "to": "notgudge"
+        },
+        {
+            "from": "heyiskallyousmellreallygoodtoday",
+            "to": "SNIFFER"
         },
         {
             "from": "hry1",
@@ -1607,6 +1683,10 @@ edgeArray = {
         {
             "from": "hryBoggies",
             "to": "hryPop"
+        },
+        {
+            "from": "hryBoints",
+            "to": "GAMBA"
         },
         {
             "from": "hryBoll",
@@ -1775,6 +1855,10 @@ edgeArray = {
         {
             "from": "hryPAG",
             "to": "PAGGIES"
+        },
+        {
+            "from": "hryPeep",
+            "to": "PRETENDING"
         },
         {
             "from": "hryPeep",
